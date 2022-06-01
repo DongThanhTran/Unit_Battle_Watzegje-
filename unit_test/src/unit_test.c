@@ -21,9 +21,9 @@ double ft_pow(double x, double y)
 }
 
 void	check_struct (){
-	struct frame s;
-	int a = s.throw1;
-	int b = s.throw2;
+	struct s_frame s;
+	int a = s.throw_1;
+	int b = s.throw_2;
 	int c = s.points;
 	(void)s;
 	(void)a;
@@ -33,13 +33,13 @@ void	check_struct (){
 
 Test(typedef_check, should_pass_all_tests_provided)
 {
-	frame_t frame;
+	t_frame frame;
 	(void)frame;
 }
 
 Test(Array_check, should_pass_all_tests_provided){
-	game_t game;
-	frame_t a = game.frames;
+	t_game game;
+	t_frame a = game.frames[9];
 	(void)a;
 }
 
