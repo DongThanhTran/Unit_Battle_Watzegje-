@@ -11,15 +11,24 @@
 /* ************************************************************************** */
 
 #include "unit_test.h"
+#include "frame.h"
+#include "frame.h"
 
 void	tester(double x, double y, double expected);
 double ft_pow(double x, double y)
 {
 	return (x * y);
 }
+
+void	check_struct (){
+	struct frame s;
+	(void)s;
+}
+
 Test(Example_Tests, should_pass_all_tests_provided)
 {
 	tester(1.0, 1.0, 1.0);
+	check_struct();
 }
 
 void	tester(double x, double y, double expected)
