@@ -1,8 +1,9 @@
 
 #ifndef FRAME_H
 # define FRAME_H
-struct frame {
-	
-
-};
+typedef struct frame {
+	int throw1;
+	int throw2;
+	int points;
+} frame_t;
 #endif

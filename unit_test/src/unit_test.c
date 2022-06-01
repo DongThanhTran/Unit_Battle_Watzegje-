@@ -22,7 +22,25 @@ double ft_pow(double x, double y)
 
 void	check_struct (){
 	struct frame s;
+	int a = s.throw1;
+	int b = s.throw2;
+	int c = s.points;
 	(void)s;
+	(void)a;
+	(void)b;
+	(void)c;
+}
+
+Test(typedef_check, should_pass_all_tests_provided)
+{
+	frame_t frame;
+	(void)frame;
+}
+
+Test(Array_check, should_pass_all_tests_provided){
+	game_t game;
+	frame_t a = game.frames;
+	(void)a;
 }
 
 Test(Example_Tests, should_pass_all_tests_provided)
